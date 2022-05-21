@@ -23,6 +23,6 @@ class CoreServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(base_path('Core/views'), 'core');
+        $this->loadViewsFrom(base_path('core/views'), 'core');
     }
 }

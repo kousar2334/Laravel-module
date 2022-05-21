@@ -13,6 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('core::core');
-});
+Route::get('/', [Core\Controllers\App::class, 'index'])->name("core.index");
